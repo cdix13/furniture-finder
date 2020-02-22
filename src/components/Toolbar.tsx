@@ -124,7 +124,14 @@ const Toolbar = (props: ToolbarProps) => {
     }
     setIsFiltered(isFiltered);
     setFilteredProducts(filtered);
-  }, [filterDeliveries, filterStyles, search]);
+  }, [
+    filterDeliveries,
+    filterStyles,
+    products,
+    search,
+    setFilteredProducts,
+    setIsFiltered,
+  ]);
 
   return (
     <Container maxWidth="md">
@@ -210,8 +217,8 @@ const Toolbar = (props: ToolbarProps) => {
                     <TextField
                       {...params}
                       variant="outlined"
-                      label="Furniture Styles"
-                      placeholder="Furniture Styles"
+                      label="Delivery Time"
+                      placeholder="Delivery Time"
                       fullWidth
                       className={classes.textField}
                     />
