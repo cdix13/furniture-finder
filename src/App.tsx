@@ -3,6 +3,7 @@ import axios from 'axios';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
+import Alert from '@material-ui/lab/Alert';
 import Container from '@material-ui/core/Container';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Toolbar from './components/Toolbar';
@@ -25,6 +26,7 @@ const App = () => {
   const classes = useStyles();
   const [styles, setStyles] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [isFiltered, setIsFiltered] = useState(false);
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -48,14 +50,13 @@ const App = () => {
         );
         setLoading(false);
       })
-      .catch((e) => setLoading(false));
+      .catch((e) => {
+        setError(e);
+        setLoading(false);
+      });
   }, []);
 
   const currentProducts = isFiltered ? filteredProducts : products;
-
-  if (loading) {
-    return <CircularProgress size={100} className={classes.loader} />;
-  }
 
   return (
     <>
@@ -69,9 +70,15 @@ const App = () => {
       <main>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
-            {currentProducts.map((product, idx) => (
-              <ProductCard key={idx} product={product} />
-            ))}
+            {loading ? (
+              <CircularProgress size={100} className={classes.loader} />
+            ) : error ? (
+              <Alert severity="error">{`${error}`}</Alert>
+            ) : (
+              currentProducts.map((product, idx) => (
+                <ProductCard key={idx} product={product} />
+              ))
+            )}
           </Grid>
         </Container>
       </main>
