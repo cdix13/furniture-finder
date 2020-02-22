@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/furniture-finder/static/js/main.add91513.chunk.js",
-    "main.js.map": "/furniture-finder/static/js/main.add91513.chunk.js.map",
+    "main.js": "/furniture-finder/static/js/main.a3f0740d.chunk.js",
+    "main.js.map": "/furniture-finder/static/js/main.a3f0740d.chunk.js.map",
     "runtime-main.js": "/furniture-finder/static/js/runtime-main.2ba4cd0a.js",
     "runtime-main.js.map": "/furniture-finder/static/js/runtime-main.2ba4cd0a.js.map",
     "static/js/2.8b7f17b3.chunk.js": "/furniture-finder/static/js/2.8b7f17b3.chunk.js",
     "static/js/2.8b7f17b3.chunk.js.map": "/furniture-finder/static/js/2.8b7f17b3.chunk.js.map",
     "index.html": "/furniture-finder/index.html",
-    "precache-manifest.07f0f412da9d29eb393e44b1bedd8bac.js": "/furniture-finder/precache-manifest.07f0f412da9d29eb393e44b1bedd8bac.js",
+    "precache-manifest.581031833966f75e23bfcfcaeffc5e79.js": "/furniture-finder/precache-manifest.581031833966f75e23bfcfcaeffc5e79.js",
     "service-worker.js": "/furniture-finder/service-worker.js",
     "static/js/2.8b7f17b3.chunk.js.LICENSE.txt": "/furniture-finder/static/js/2.8b7f17b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2ba4cd0a.js",
     "static/js/2.8b7f17b3.chunk.js",
-    "static/js/main.add91513.chunk.js"
+    "static/js/main.a3f0740d.chunk.js"
   ]
 }

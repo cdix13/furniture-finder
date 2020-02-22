@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69bfb6d36fd6e8f57474a91883ffd02c",
+    "revision": "0fed6cee49a1dfb831991693a71c8a4d",
     "url": "/furniture-finder/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/furniture-finder/static/js/2.8b7f17b3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c895294e112e1273794",
-    "url": "/furniture-finder/static/js/main.add91513.chunk.js"
+    "revision": "69ab4007abaecbff7f1e",
+    "url": "/furniture-finder/static/js/main.a3f0740d.chunk.js"
   },
   {
     "revision": "4e4dfe4c7fc381bbbb69",
