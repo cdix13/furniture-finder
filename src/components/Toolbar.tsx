@@ -124,14 +124,8 @@ const Toolbar = (props: ToolbarProps) => {
     }
     setIsFiltered(isFiltered);
     setFilteredProducts(filtered);
-  }, [
-    filterDeliveries,
-    filterStyles,
-    products,
-    search,
-    setFilteredProducts,
-    setIsFiltered,
-  ]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filterDeliveries, filterStyles, search]);
 
   return (
     <Container maxWidth="md">
