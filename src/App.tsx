@@ -88,9 +88,17 @@ const initProducts = [
   },
 ];
 
+const initStyles = [
+  'Classic',
+  'Midcentury',
+  'Scandinavian',
+  'Modern',
+  'Contemporary',
+];
+
 const App = () => {
   const classes = useStyles();
-  const [styles, setStyles] = useState<string[]>([]);
+  const [styles, setStyles] = useState<string[]>(initStyles);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [isFiltered, setIsFiltered] = useState(false);
@@ -118,7 +126,7 @@ const App = () => {
       })
       .catch((e) => {
         setError(
-          'Error load data from API, data used for this app from local variable',
+          'Error load data from API, data used for this app from local variables instead',
         );
         setLoading(false);
       });
